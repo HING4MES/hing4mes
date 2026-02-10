@@ -9,11 +9,28 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background: url("fundo.jpg") no-repeat center center fixed;
+  background-image: url("fundo.jpg");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* BOTÃO MÚSICA */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #22c55e;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
 }
 
 /* HEADER */
@@ -105,6 +122,15 @@ footer a {
 
 <body>
 
+<!-- MÚSICA -->
+<audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="document.getElementById('musica').play()">
+🎵 Tocar música
+</button>
+
 <header>
   <img src="logo.png" class="logo-img">
   <div class="logo-text">Hing4mes</div>
@@ -126,26 +152,22 @@ footer a {
     <summary>👉 Clique para ver meus periféricos</summary>
 
     <div class="card">
-      🖱 Mouse  
-      <br>
+      🖱 Mouse<br>
       <a href="https://mercadolivre.com/sec/2V3LAsG" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      ⌨ Teclado  
-      <br>
+      ⌨ Teclado<br>
       <a href="https://mercadolivre.com/sec/1X4TfEQ" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🎤 Microfone  
-      <br>
+      🎤 Microfone<br>
       <a href="https://mercadolivre.com/sec/1MJFQpL" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🖥 Monitor  
-      <br>
+      🖥 Monitor<br>
       <a href="https://mercadolivre.com/sec/23FKzuz" target="_blank">Comprar</a>
     </div>
 
