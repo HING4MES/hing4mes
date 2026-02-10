@@ -2,115 +2,103 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Hing4mes - Site Oficial</title>
+<title>Hing4mes - Setup</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  text-align: center;
-  background: linear-gradient(-45deg, #001a00, #003300, #002200, #000000);
-  background-size: 400% 400%;
-  animation: fundo 12s ease infinite;
+  background: url("fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ANIMAÇÃO DO FUNDO */
-@keyframes fundo {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-
+/* HEADER */
 header {
-  padding: 40px 20px 20px;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
 }
 
-.logo img {
-  width: 180px;
-  filter: drop-shadow(0 0 15px #22c55e);
+.logo-img {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+  box-shadow: 0 0 20px #22c55e;
 }
 
-.subtitle {
-  color: #9ca3af;
+.logo-text {
+  font-size: 48px;
+  letter-spacing: 4px;
+  color: #22c55e;
   margin-top: 10px;
 }
 
+/* SEÇÕES */
 section {
-  background: rgba(0,0,0,0.7);
-  margin: 20px auto;
+  background: rgba(0,0,0,0.75);
+  margin: 15px;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 15px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 0 25px rgba(34,197,94,0.3);
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,255,0,0.2);
 }
 
 h2 {
   color: #22c55e;
 }
 
+/* DETAILS */
 details {
-  background: #052e16;
+  background: #0f172a;
   padding: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
 summary {
   cursor: pointer;
   font-size: 18px;
-  color: #4ade80;
+  color: #22c55e;
 }
 
+/* CARDS */
 .card {
   background: #020617;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 8px;
   margin-top: 10px;
 }
 
 .card a {
   display: inline-block;
-  margin-top: 8px;
-  padding: 8px 14px;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
+  margin-top: 5px;
+  padding: 6px 12px;
+  background: #22c55e;
   color: black;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: bold;
-  transition: 0.2s;
 }
 
-.card a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 12px #22c55e;
-}
-
+/* FOOTER */
 footer {
-  margin-top: 30px;
+  text-align: center;
   padding: 20px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
 }
 
 footer a {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 16px;
-  border-radius: 10px;
-  background: #064e3b;
   color: #22c55e;
   text-decoration: none;
-  transition: 0.2s;
-}
-
-footer a:hover {
-  background: #22c55e;
-  color: black;
-  box-shadow: 0 0 10px #22c55e;
+  margin: 0 10px;
 }
 </style>
 </head>
@@ -118,17 +106,16 @@ footer a:hover {
 <body>
 
 <header>
-  <div class="logo">
-    <img src="logo.png" alt="Logo Hing4mes">
-  </div>
-  <p class="subtitle">Streamer de Minecraft • Gamer 🎮</p>
+  <img src="logo.png" class="logo-img">
+  <div class="logo-text">Hing4mes</div>
+  <p>Site oficial do meu canal</p>
 </header>
 
 <section>
-  <h2>⛏ Sobre mim</h2>
+  <h2>👤 Sobre mim</h2>
   <p>
-    Olá! Eu sou o Hing4mes, criador de conteúdo gamer focado em Minecraft.  
-    Faço lives, vídeos e gameplays insanas no YouTube e Twitch.
+    Olá! Eu sou o Hing4mes, criador de conteúdo gamer.  
+    Moro no Brasil e faço lives e vídeos principalmente de Minecraft.
   </p>
 </section>
 
@@ -140,21 +127,25 @@ footer a:hover {
 
     <div class="card">
       🖱 Mouse  
+      <br>
       <a href="https://mercadolivre.com/sec/2V3LAsG" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
       ⌨ Teclado  
+      <br>
       <a href="https://mercadolivre.com/sec/1X4TfEQ" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
       🎤 Microfone  
+      <br>
       <a href="https://mercadolivre.com/sec/1MJFQpL" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
       🖥 Monitor  
+      <br>
       <a href="https://mercadolivre.com/sec/23FKzuz" target="_blank">Comprar</a>
     </div>
 
@@ -165,25 +156,23 @@ footer a:hover {
   <h2>💻 Configuração do PC</h2>
 
   <details>
-    <summary>👉 Clique para ver a configuração</summary>
+    <summary>👉 Clique para ver a configuração do PC</summary>
 
-    <div class="card">⚙ Ryzen 5 5500</div>
-    <div class="card">🎮 GTX 1660 Super</div>
-    <div class="card">🧠 16GB RAM</div>
-    <div class="card">💾 SSD</div>
+    <div class="card">Processador: Ryzen 5 5500</div>
+    <div class="card">Placa de vídeo: GTX 1660 Super</div>
+    <div class="card">Memória RAM: 16GB</div>
+    <div class="card">Armazenamento: SSD</div>
 
   </details>
 </section>
 
 <footer>
-  <p>🌐 Redes oficiais</p>
-
+  <p>🌐 Redes do Hing4mes</p>
   <a href="https://discord.com/invite/arT6ne67sC" target="_blank">Discord</a>
   <a href="https://livepix.gg/hing4mes" target="_blank">LivePix</a>
   <a href="https://www.twitch.tv/hing4mes_ofc" target="_blank">Twitch</a>
   <a href="https://www.instagram.com/jvmf_25" target="_blank">Instagram</a>
-
-  <p style="margin-top:15px;color:#4b5563;">© 2026 Hing4mes</p>
+  <p>© 2026 - Hing4mes</p>
 </footer>
 
 </body>
