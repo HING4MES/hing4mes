@@ -2,41 +2,41 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Hing4mes - Setup</title>
+<title>Hing4mes - Site Oficial</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
   color: white;
-  background: url("fundo.jpg") no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 header {
-  text-align: center;
-  padding: 30px;
-  background: rgba(0,0,0,0.6);
-  width: 100%;
+  padding: 40px 20px;
 }
 
 .logo {
-  font-size: 60px;
-  letter-spacing: 4px;
+  font-size: 64px;
+  font-weight: bold;
   color: #22c55e;
+  text-shadow: 0 0 15px #22c55e;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 10px;
 }
 
 section {
-  background: rgba(0,0,0,0.7);
-  margin: 15px;
+  background: #0f172a;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 16px;
   width: 90%;
   max-width: 500px;
-  text-align: center;
+  box-shadow: 0 0 20px rgba(34,197,94,0.2);
 }
 
 h2 {
@@ -44,9 +44,9 @@ h2 {
 }
 
 details {
-  background: rgba(30,41,59,0.9);
+  background: #1e293b;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 10px;
 }
 
@@ -57,35 +57,49 @@ summary {
 }
 
 .card {
-  background: rgba(2,6,23,0.9);
-  padding: 10px;
-  border-radius: 8px;
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
 .card a {
-  display: block;
-  margin-top: 5px;
-  padding: 8px;
-  background: #22c55e;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
   color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+.card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #22c55e;
 }
 
 footer {
-  text-align: center;
+  margin-top: 30px;
   padding: 20px;
-  background: rgba(0,0,0,0.6);
-  width: 100%;
 }
 
 footer a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #1e293b;
   color: #22c55e;
   text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  background: #22c55e;
+  color: black;
+  box-shadow: 0 0 10px #22c55e;
 }
 </style>
 </head>
@@ -93,15 +107,16 @@ footer a {
 <body>
 
 <header>
-  <div class="logo">Hing4mes</div>
-  <p>Site oficial do meu canal</p>
+  <!-- Troca esse texto por uma imagem depois se quiser -->
+  <div class="logo">HING4MES</div>
+  <p class="subtitle">Site oficial do meu canal gamer 🎮</p>
 </header>
 
 <section>
   <h2>👤 Sobre mim</h2>
   <p>
-    Olá! Eu sou o Hing4mes, criador de conteúdo gamer.<br>
-    Moro no Brasil e faço lives e vídeos principalmente de Minecraft.
+    Olá! Eu sou o Hing4mes, criador de conteúdo gamer.  
+    Faço lives e vídeos principalmente de Minecraft.
   </p>
 </section>
 
@@ -112,22 +127,22 @@ footer a {
     <summary>👉 Clique para ver meus periféricos</summary>
 
     <div class="card">
-      🖱 Mouse  
+      🖱 Mouse<br>
       <a href="https://mercadolivre.com/sec/2V3LAsG" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      ⌨ Teclado  
+      ⌨ Teclado<br>
       <a href="https://mercadolivre.com/sec/1X4TfEQ" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🎤 Microfone  
+      🎤 Microfone<br>
       <a href="https://mercadolivre.com/sec/1MJFQpL" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🖥 Monitor  
+      🖥 Monitor<br>
       <a href="https://mercadolivre.com/sec/23FKzuz" target="_blank">Comprar</a>
     </div>
 
@@ -140,21 +155,23 @@ footer a {
   <details>
     <summary>👉 Clique para ver a configuração do PC</summary>
 
-    <div class="card">Processador: Ryzen 5 5500</div>
-    <div class="card">Placa de vídeo: GTX 1660 Super</div>
-    <div class="card">Memória RAM: 16GB</div>
-    <div class="card">Armazenamento: SSD</div>
+    <div class="card">⚙ Processador: Ryzen 5 5500</div>
+    <div class="card">🎮 Placa de vídeo: GTX 1660 Super</div>
+    <div class="card">🧠 Memória RAM: 16GB</div>
+    <div class="card">💾 Armazenamento: SSD</div>
 
   </details>
 </section>
 
 <footer>
   <p>🌐 Redes do Hing4mes</p>
+
   <a href="https://discord.com/invite/arT6ne67sC" target="_blank">Discord</a>
   <a href="https://livepix.gg/hing4mes" target="_blank">LivePix</a>
   <a href="https://www.twitch.tv/hing4mes_ofc" target="_blank">Twitch</a>
   <a href="https://www.instagram.com/jvmf_25" target="_blank">Instagram</a>
-  <p>© 2026 - Hing4mes</p>
+
+  <p style="margin-top:15px;color:#555;">© 2026 - Hing4mes</p>
 </footer>
 
 </body>
