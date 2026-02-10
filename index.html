@@ -5,38 +5,49 @@
 <title>Hing4mes - Site Oficial</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #020617, #000);
   color: white;
   text-align: center;
+  background: linear-gradient(-45deg, #001a00, #003300, #002200, #000000);
+  background-size: 400% 400%;
+  animation: fundo 12s ease infinite;
+}
+
+/* ANIMAÇÃO DO FUNDO */
+@keyframes fundo {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 header {
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
 }
 
-.logo {
-  font-size: 64px;
-  font-weight: bold;
-  color: #22c55e;
-  text-shadow: 0 0 15px #22c55e;
+.logo img {
+  width: 180px;
+  filter: drop-shadow(0 0 15px #22c55e);
 }
 
 .subtitle {
-  color: #aaa;
+  color: #9ca3af;
   margin-top: 10px;
 }
 
 section {
-  background: #0f172a;
+  background: rgba(0,0,0,0.7);
   margin: 20px auto;
   padding: 20px;
   border-radius: 16px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 0 20px rgba(34,197,94,0.2);
+  box-shadow: 0 0 25px rgba(34,197,94,0.3);
 }
 
 h2 {
@@ -44,7 +55,7 @@ h2 {
 }
 
 details {
-  background: #1e293b;
+  background: #052e16;
   padding: 15px;
   border-radius: 12px;
   margin-top: 10px;
@@ -53,7 +64,7 @@ details {
 summary {
   cursor: pointer;
   font-size: 18px;
-  color: #22c55e;
+  color: #4ade80;
 }
 
 .card {
@@ -76,8 +87,8 @@ summary {
 }
 
 .card a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #22c55e;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #22c55e;
 }
 
 footer {
@@ -90,7 +101,7 @@ footer a {
   margin: 8px;
   padding: 10px 16px;
   border-radius: 10px;
-  background: #1e293b;
+  background: #064e3b;
   color: #22c55e;
   text-decoration: none;
   transition: 0.2s;
@@ -107,16 +118,17 @@ footer a:hover {
 <body>
 
 <header>
-  <!-- Troca esse texto por uma imagem depois se quiser -->
-  <div class="logo">HING4MES</div>
-  <p class="subtitle">Site oficial do meu canal gamer 🎮</p>
+  <div class="logo">
+    <img src="logo.png" alt="Logo Hing4mes">
+  </div>
+  <p class="subtitle">Streamer de Minecraft • Gamer 🎮</p>
 </header>
 
 <section>
-  <h2>👤 Sobre mim</h2>
+  <h2>⛏ Sobre mim</h2>
   <p>
-    Olá! Eu sou o Hing4mes, criador de conteúdo gamer.  
-    Faço lives e vídeos principalmente de Minecraft.
+    Olá! Eu sou o Hing4mes, criador de conteúdo gamer focado em Minecraft.  
+    Faço lives, vídeos e gameplays insanas no YouTube e Twitch.
   </p>
 </section>
 
@@ -127,22 +139,22 @@ footer a:hover {
     <summary>👉 Clique para ver meus periféricos</summary>
 
     <div class="card">
-      🖱 Mouse<br>
+      🖱 Mouse  
       <a href="https://mercadolivre.com/sec/2V3LAsG" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      ⌨ Teclado<br>
+      ⌨ Teclado  
       <a href="https://mercadolivre.com/sec/1X4TfEQ" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🎤 Microfone<br>
+      🎤 Microfone  
       <a href="https://mercadolivre.com/sec/1MJFQpL" target="_blank">Comprar</a>
     </div>
 
     <div class="card">
-      🖥 Monitor<br>
+      🖥 Monitor  
       <a href="https://mercadolivre.com/sec/23FKzuz" target="_blank">Comprar</a>
     </div>
 
@@ -153,25 +165,25 @@ footer a:hover {
   <h2>💻 Configuração do PC</h2>
 
   <details>
-    <summary>👉 Clique para ver a configuração do PC</summary>
+    <summary>👉 Clique para ver a configuração</summary>
 
-    <div class="card">⚙ Processador: Ryzen 5 5500</div>
-    <div class="card">🎮 Placa de vídeo: GTX 1660 Super</div>
-    <div class="card">🧠 Memória RAM: 16GB</div>
-    <div class="card">💾 Armazenamento: SSD</div>
+    <div class="card">⚙ Ryzen 5 5500</div>
+    <div class="card">🎮 GTX 1660 Super</div>
+    <div class="card">🧠 16GB RAM</div>
+    <div class="card">💾 SSD</div>
 
   </details>
 </section>
 
 <footer>
-  <p>🌐 Redes do Hing4mes</p>
+  <p>🌐 Redes oficiais</p>
 
   <a href="https://discord.com/invite/arT6ne67sC" target="_blank">Discord</a>
   <a href="https://livepix.gg/hing4mes" target="_blank">LivePix</a>
   <a href="https://www.twitch.tv/hing4mes_ofc" target="_blank">Twitch</a>
   <a href="https://www.instagram.com/jvmf_25" target="_blank">Instagram</a>
 
-  <p style="margin-top:15px;color:#555;">© 2026 - Hing4mes</p>
+  <p style="margin-top:15px;color:#4b5563;">© 2026 Hing4mes</p>
 </footer>
 
 </body>
